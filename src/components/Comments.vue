@@ -135,7 +135,7 @@
                 if (parentComment) {
                     const now = new Date();
                     parentComment.replies.push(reactive({
-                        id: Date.now(),
+                        id: replyUser.value.id(),
                         name: replyUser.value.name,
                         email: replyUser.value.email,
                         message: replyContent.value,
